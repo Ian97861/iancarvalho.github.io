@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro</h1>
+    <p></p>
+    <form method="post" action="https://exemplo1@formulario.com">
+        <input type="hidden" name="recipient" value="exemplo@exemplo.com">
+        <input type="hidden" name="subject" value="Searching Form">
+        <input type="hidden" name="redirect" value="main.html">
+
+        <p><label>Nome:
+                <input name="Nome" type="text" size="20" maxlength="60" placeholder="Nome">
+            </label></p>
+        <p><label>Sobrenome:
+                <input name="Sobrenome" type="text" size="20" maxlength="50" placeholder="Sobrenome">
+            </label></p>
+        <p><label>E-mail:
+                <input type="email" placeholder="nome@dominio.com" required />
+                (nome@dominio.com)
+            </label></p>
+        <p></p>
+        <label>
+            <details>Ano de sua faculdade: <input type="month" name="Ano de sua faculdade" id="1">
+            </details>
+        </label>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>
