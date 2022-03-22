@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preenchimento Automatico</title>
+</head>
+
+<body>
+    <form method="post" autocomplete="on">
+        <p><label>Nome:
+                <input type="text" id="Nome" placeholder="Primeiro nome" /> (Primeiro Nome)
+            </label></p>
+        <p><label>Sobrenome:
+                <input type="text" id="Sobrenome" placeholder="Sobrenome" /> (Sobrenome)
+            </label></p>
+        <p><label for="txtList">Dia no qual faz aniversario:
+                <input type="text" id="txtList" placeholder="Escolha o dia" list="days" />
+                <datalist id="days">
+                    <option value="Segunda">
+                    <option value="Terca">
+                    <option value="Quarta">
+                    <option value="Quinta">
+                    <option value="Sexta">
+                    <option value="Sabado">
+                    <option value="Domingo">
+                </datalist></label></p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+
+</html>
