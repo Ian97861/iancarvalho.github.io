@@ -1,0 +1,6 @@
+body{
+    background-image: url(../Imagens-Exemplo/Visão..jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
