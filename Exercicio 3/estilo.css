@@ -1,0 +1,16 @@
+.paragrafo1 {
+    float: left;
+    width: 45%;
+    background-color: greenyellow;
+}
+
+.paragrafo2 {
+    float: right;
+    width: 45%;
+    background-color: green;
+}
+
+.cabecalho {
+    background-color: aqua;
+    width: 40%;
+}
