@@ -1,0 +1,13 @@
+.navbutton button {
+    background-color: aquamarine;
+    border: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.navbutton button:hover {
+    background-color: red;
+    border-style: double;
+    color: orange;
+}
