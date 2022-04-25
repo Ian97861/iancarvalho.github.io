@@ -1,0 +1,27 @@
+.header {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    background-color: royalblue;
+}
+
+.flex-container {
+    display: flex;
+    background-color: aqua;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
