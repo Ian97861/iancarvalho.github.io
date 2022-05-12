@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.Colunas {
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna-flex {
+    flex-grow: 1;
+    height: 65vh;
+    padding: 10px;
+}
+
+#coluna1 {
+    background-color: #aaa;
+
+}
+
+#coluna2 {
+    background-color: #bbb;
+
+}
+
+#coluna3 {
+    background-color: #ccc;
+
+}
+
+#coluna4 {
+    background-color: red;
+
+}
+
+footer {
+    display: flex;
+    background-color: brown;
+    justify-content: center;
+    padding: 40px;
+}
+
+@media(max-width:480px) {
+    .Colunas {
+        flex-direction: column;
+        width: 100%;
+    }
+}
