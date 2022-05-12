@@ -44,3 +44,11 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
+
+/*Design responsivo para dispositivos com largura máxima de 480 pixels*/
+
+@media (max-width:480px) {
+    .Column {
+        width: 100%;
+    }
+}
