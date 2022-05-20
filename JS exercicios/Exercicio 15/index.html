@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Programming</title>
+</head>
+<script>
+    var peso = Number(window.prompt('Digite os kilos dos peixes:'));
+    var excesso = 51;
+    var multa = 4;
+    var Calculo;
+    if (peso == excesso) {
+        document.writeln('Será cobrado por cada peso excedente: ', +multa);
+    } else if (peso > excesso) {
+        Calculo = multa * ((1 + peso) - excesso);
+        document.writeln('O valor a ser pago é: ', +Calculo);
+    } else {
+        document.writeln('Está tudo nos conformes.');
+    }
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
