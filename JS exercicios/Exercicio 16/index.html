@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercises</title>
+</head>
+<script>
+    var GanhoHora = Number(window.prompt('Quanto é seu ganho por hora?'));
+    var HorasMes = Number(window.prompt('Qual o número de horas trabalhadas por mês?'));
+    var SalarioMensal;
+    SalarioMensal = ((GanhoHora * 8) * 30);
+    var IR;
+    IR = ((SalarioMensal * 11) / 100);
+    var INSS;
+    INSS = ((SalarioMensal * 8) / 100);
+    var Sindicato;
+    Sindicato = ((SalarioMensal * 5) / 100);
+    var SalarioLiquido;
+    SalarioLiquido = SalarioMensal - (IR + INSS + Sindicato);
+    document.writeln("<p>+ Salário Bruto: R$" + SalarioMensal + "</p>" + "<p>- IR(11%): R$" + IR + "</p>"
+        + "<p> - INSS (8%): R$" + INSS + "</p>"
+        + "<p> - Sindicato(5%): R$" + Sindicato + "</p>"
+        + "<p> = Salário Líquido: R$" + SalarioLiquido + "</p>");
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
