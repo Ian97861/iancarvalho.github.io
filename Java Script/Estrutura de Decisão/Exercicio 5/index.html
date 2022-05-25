@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script training</title>
+</head>
+<script>
+    var nota1 = Number.parseFloat(window.prompt('Digite sua primeira nota:'));
+    var nota2 = Number.parseFloat(window.prompt('Digite sua segunda nota: '));
+    var media;
+    media = (nota1 + nota2) / 2;
+    if (media >= 7) {
+        document.writeln('Parabéns!! Você foi aprovado.');
+    } else if (media < 7) {
+        document.writeln('<p></p> Lamento. Você foi reprovado.');
+    } if (media == 10) {
+        document.writeln('Nasce um novo Albert Einstein.<p></p> Aprovado com Distinção.<p></p> Meus parabéns.');
+    } else {
+        document.writeln('<p></p>Sua média foi: ', +media);
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>
