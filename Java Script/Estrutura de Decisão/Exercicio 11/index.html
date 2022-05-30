@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script training</title>
+</head>
+<script>
+    var ReajusteSalarial1 = 0.2;
+    var ReajusteSalarial2 = 0.15;
+    var ReajusteSalarial3 = 0.1;
+    var ReajusteSalarial4 = 0.05;
+    var ValorAumento;
+    var NovoSalario;
+    var SalarioAntigo = Number(window.prompt('Digite o seu salário: '));
+    if (SalarioAntigo <= 280.00) {
+        ValorAumento = (SalarioAntigo * ReajusteSalarial1);
+        NovoSalario = ValorAumento + SalarioAntigo;
+        document.writeln('Salário antes do reajuste: ', +SalarioAntigo + '<p></p> O percentual do aumento aplicado foi  20%' + '<p></p> O valor do aumento foi: ', +ValorAumento + '<p></p> O novo salário é: ', +NovoSalario);
+    } else if (SalarioAntigo > 280.00 && SalarioAntigo < 700) {
+        ValorAumento = (SalarioAntigo * ReajusteSalarial2);
+        NovoSalario = ValorAumento + SalarioAntigo;
+        document.writeln('Salário antes do reajuste: ', +SalarioAntigo + '<p></p> O percentual do aumento aplicado foi  15%' + '<p></p> O valor do aumento foi: ', +ValorAumento + '<p></p> O novo salário é: ', +NovoSalario);
+    } else if (SalarioAntigo >= 700 && SalarioAntigo < 1500) {
+        ValorAumento = (SalarioAntigo * ReajusteSalarial3);
+        NovoSalario = ValorAumento + SalarioAntigo;
+        document.writeln('Salário antes do reajuste: ', +SalarioAntigo + '<p></p> O percentual do aumento aplicado foi  10%' + '<p></p> O valor do aumento foi: ', +ValorAumento + '<p></p> O novo salário é: ', +NovoSalario);
+    } else if (SalarioAntigo >= 1500) {
+        ValorAumento = (SalarioAntigo * ReajusteSalarial4);
+        NovoSalario = ValorAumento + SalarioAntigo;
+        document.writeln('Salário antes do reajuste: ', +SalarioAntigo + '<p></p> O percentual do aumento aplicado foi  5%' + '<p></p> O valor do aumento foi: ', +ValorAumento + '<p></p> O novo salário é: ', +NovoSalario);
+    } else {
+        document.writeln('Você não pode receber um aumento');
+    }
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
