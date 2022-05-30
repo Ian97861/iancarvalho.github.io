@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercises</title>
+</head>
+<script>
+    var Hora = Number(window.prompt('Digite o valor de sua hora: '));
+    var QuantidadeHoras = Number(window.prompt('Digite a quantidade de horas trabalhadas no mês: '));
+    var SalarioBruto = Hora * QuantidadeHoras;
+    var IR = SalarioBruto * 0.05;
+    var INSS = SalarioBruto * 0.1;
+    var FGTS = SalarioBruto * 0.11;
+    var TotalDescontos = (IR + INSS);
+    var SalarioLíquido = (SalarioBruto - TotalDescontos);
+
+    if (SalarioBruto <= 900) {
+        SalarioBruto = Hora * QuantidadeHoras;
+        INSS = SalarioBruto * 0.1;
+        FGTS = SalarioBruto * 0.11;
+        TotalDescontos = (INSS);
+        SalarioLíquido = (SalarioBruto - TotalDescontos);
+        document.writeln('Salário Bruto: ', +SalarioBruto + '<p></p> (Insento) IR: 0' + '<p></p> (-) INSS (10%):', +INSS + '<p></p> FGTS(11%):', +FGTS + '<p></p> Total de Descontos: ', +TotalDescontos + '<p></p> Salário Líquido: ', +SalarioLíquido);
+    } else if (SalarioBruto <= 1500) {
+        document.writeln('Salário Bruto: ', +SalarioBruto + '<p></p> (-) IR (5%):', +IR + '<p></p> (-) INSS (10%):', +INSS + '<p></p> FGTS(11%):', +FGTS + '<p></p> Total de Descontos: ', +TotalDescontos + '<p></p> Salário Líquido: ', +SalarioLíquido);
+    } else if (SalarioBruto <= 2500) {
+        SalarioBruto = Hora * QuantidadeHoras;
+        INSS = SalarioBruto * 0.1;
+        FGTS = SalarioBruto * 0.11;
+        IR = SalarioBruto * 0.1;
+        TotalDescontos = (IR + INSS);
+        SalarioLíquido = (SalarioBruto - TotalDescontos);
+        document.writeln('Salário Bruto: ', +SalarioBruto + '<p></p> (-) IR (10%):', +IR + '<p></p> (-) INSS (10%):', +INSS + '<p></p> FGTS(11%):', +FGTS + '<p></p> Total de Descontos: ', +TotalDescontos + '<p></p> Salário Líquido: ', +SalarioLíquido);
+    } else if (SalarioBruto > 2500) {
+        SalarioBruto = Hora * QuantidadeHoras;
+        INSS = SalarioBruto * 0.1;
+        FGTS = SalarioBruto * 0.11;
+        IR = SalarioBruto * 0.2;
+        TotalDescontos = (IR + INSS);
+        SalarioLíquido = (SalarioBruto - TotalDescontos);
+        document.writeln('Salário Bruto: ', +SalarioBruto + '<p></p> (-) IR (20%):', +IR + '<p></p> (-) INSS (10%):', +INSS + '<p></p> FGTS(11%):', +FGTS + '<p></p> Total de Descontos: ', +TotalDescontos + '<p></p> Salário Líquido: ', +SalarioLíquido);
+    } else {
+        document.writeln('Salário Bruto: ', +SalarioBruto + '<p></p> (-) IR (5%):', +IR + '<p></p> (-) INSS (10%):', +INSS + '<p></p> FGTS(11%):', +FGTS + '<p></p> Total de Descontos: ', +TotalDescontos + '<p></p> Salário Líquido: ', +SalarioLíquido);
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
