@@ -8,8 +8,23 @@
     <title>Java Script training</title>
 </head>
 <script>
-    
+    var Lado1 = Number(window.prompt('Digite um dos lados do triângulo: '));
+    var Lado2 = Number(window.prompt('Digite um dos lados do triângulo: '));
+    var Lado3 = Number(window.prompt('Digite um dos lados do triângulo: '));
 
+    if (Lado1 < (Lado2 + Lado3) && Lado2 < (Lado1 + Lado3) && Lado3 < (Lado1 + Lado2)) {
+        if (Lado1 == Lado2 && Lado3 == Lado2) {
+            document.writeln('Você tem um triângulo Equilátero.');
+        } else if (Lado1 == Lado2 || Lado2 == Lado3 || Lado3 == Lado1) {
+            document.writeln('Você tem um triângulo Isósceles.')
+        } else if (Lado1 != Lado2 && Lado1 != Lado3 && Lado2 != Lado3) {
+            document.writeln('Você tem um triângulo Escaleno.')
+        } else {
+            document.writeln('Você tem um triângulo.')
+        }
+    } else {
+        document.writeln('Você não tem um triângulo.')
+    }
 
 </script>
 
