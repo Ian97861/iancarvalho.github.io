@@ -8,32 +8,23 @@
     <title>Java Script training</title>
 </head>
 <script>
-    var DiaDaSemana = Number(window.prompt('Digite um número que direi o dia correspondente da semana: '));
+    var nota1 = Number.parseFloat(window.prompt('Digite sua primeira nota: '));
+    var nota2 = Number.parseFloat(window.prompt('Digite sua segunda nota: '));
+    var média;
+    média = (nota1 + nota2) / 2;
 
-    switch (DiaDaSemana) {
-        case 1:
-            document.writeln('Domingo');
-            break;
-        case 2:
-            document.writeln('Segunda');
-            break;
-        case 3:
-            document.writeln('Terça');
-            break;
-        case 4:
-            document.writeln('Quarta');
-            break;
-        case 5:
-            document.writeln('Quinta');
-            break;
-        case 6:
-            document.writeln('Sexta');
-            break;
-        case 7:
-            document.writeln('Sábado');
-            break;
-        default:
-            document.writeln('Valor inválido');
+    if (média <= 4.0) {
+        document.writeln('Sua primeira nota foi: ', +nota1 + '<p></p> Sua segunda nota foi: ', +nota2 + '<p></p> Sua média foi: ', +média + '<p></p> Conceito E' + '<p></p> Reprovado!');
+    } else if (média > 4.0 && média <= 6.0) {
+        document.writeln('Sua primeira nota foi: ', +nota1 + '<p></p> Sua segunda nota foi: ', +nota2 + '<p></p> Sua média foi: ', +média + '<p></p> Conceito D' + '<p></p> Reprovado!');
+    } else if (média > 6.0 && média <= 7.5) {
+        document.writeln('Sua primeira nota foi: ', +nota1 + '<p></p> Sua segunda nota foi: ', +nota2 + '<p></p> Sua média foi: ', +média + '<p></p> Conceito C' + '<p></p> Aprovado!');
+    } else if (média > 7.5 && média <= 9.0) {
+        document.writeln('Sua primeira nota foi: ', +nota1 + '<p></p> Sua segunda nota foi: ', +nota2 + '<p></p> Sua média foi: ', +média + '<p></p> Conceito B' + '<p></p> Aprovado!');
+    } else if (média > 9.0 && média <= 10.0) {
+        document.writeln('Sua primeira nota foi: ', +nota1 + '<p></p> Sua segunda nota foi: ', +nota2 + '<p></p> Sua média foi: ', +média + '<p></p> Conceito A' + '<p></p> Aprovado!');
+    } else {
+        document.writeln('Há algo errado com sua nota, está acima da escala.');
     }
 
 
